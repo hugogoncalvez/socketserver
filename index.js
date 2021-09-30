@@ -18,7 +18,7 @@ const publicPath = path.resolve( __dirname, 'public');
 
 app.use( express.static(publicPath));
 
-server.listen(process.env.Port, (err) => {
+server.listen(process.env.PORT, (err) => {
     if (err) throw new error(err);
-    console.log('Servidor corriendo en puerto', process.env.Port);
+    console.log('Servidor corriendo en puerto', process.env.PORT);
 })
